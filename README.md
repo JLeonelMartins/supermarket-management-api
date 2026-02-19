@@ -72,6 +72,19 @@ This project was developed to practice and demonstrate backend architecture conc
 
 ---
 
+## 🐳 Docker
+
+Run the application using Docker:
+
+docker-compose up --build
+
+---
+
+## 📬 Postman Collection
+
+A Postman collection is included inside the /postman folder
+to easily test the available endpoints.
+
 ## 👨‍💻 Author
 
 Jonathan Martins  
