@@ -85,6 +85,25 @@ docker-compose up --build
 A Postman collection is included inside the /postman folder
 to easily test the available endpoints.
 
+## 🐳 Run with Docker (Recommended)
+
+1. Install Docker
+2. Run:
+   docker-compose up --build
+3. Access the API at:
+   http://localhost:8080
+
+## 💻 Run Locally without Docker
+
+1. Create MySQL database:
+   CREATE DATABASE supermarketapi;
+2. Set environment variables:
+   DB_URL=...
+   DB_USER_NAME=...
+   DB_PASSWORD=...
+3. Run:
+   mvn spring-boot:run
+
 ## 👨‍💻 Author
 
 Jonathan Martins  
