@@ -1,0 +1,45 @@
+# flyctl launch added from supermarket-api\.gitignore
+supermarket-api\**\HELP.md
+supermarket-api\**\target
+supermarket-api\**\.mvn\wrapper\maven-wrapper.jar
+!supermarket-api\**\**\src\main\**\target
+!supermarket-api\**\**\src\test\**\target
+
+### STS ###
+supermarket-api\**\.apt_generated
+supermarket-api\**\.classpath
+supermarket-api\**\.factorypath
+supermarket-api\**\.project
+supermarket-api\**\.settings
+supermarket-api\**\.springBeans
+supermarket-api\**\.sts4-cache
+
+### IntelliJ IDEA ###
+supermarket-api\**\.idea
+supermarket-api\**\*.iws
+supermarket-api\**\*.iml
+supermarket-api\**\*.ipr
+
+### NetBeans ###
+supermarket-api\nbproject\private
+supermarket-api\nbbuild
+supermarket-api\dist
+supermarket-api\nbdist
+supermarket-api\.nb-gradle
+supermarket-api\**\build
+!supermarket-api\**\**\src\main\**\build
+!supermarket-api\**\**\src\test\**\build
+
+### VS Code ###
+supermarket-api\**\.vscode
+
+# flyctl launch added from supermarket-api\.idea\.gitignore
+# Default ignored files
+supermarket-api\.idea\shelf
+supermarket-api\.idea\workspace.xml
+# Editor-based HTTP Client requests
+supermarket-api\.idea\httpRequests
+# Datasource local storage ignored files
+supermarket-api\.idea\dataSources
+supermarket-api\.idea\dataSources.local.xml
+fly.toml
