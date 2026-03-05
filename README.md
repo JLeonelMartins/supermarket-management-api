@@ -1,11 +1,13 @@
 # 🛒 Supermarket Management API
 
-RESTful API developed with Spring Boot for managing a supermarket system.
-The application handles products, branches and sales operations, following a clean layered architecture and backend best practices.
+RESTful API developed with **Spring Boot** for managing supermarket operations.  
+The application handles products, branches and sales while following a **clean layered backend architecture** and modern backend development practices.
+
+This project demonstrates backend best practices including **REST API design, JPA entity relationships, Docker integration and environment-based configuration**.
 
 ---
 
-## 🚀 Technologies
+# 🚀 Technologies
 
 - Java 8
 - Spring Boot
@@ -13,80 +15,122 @@ The application handles products, branches and sales operations, following a cle
 - Hibernate
 - MySQL
 - Maven
+- Docker
+- Postman
 
 ---
 
-## 🏗 Architecture
+# 📋 Requirements
 
-The project follows a layered architecture:
+To run the project you will need:
 
-- Controller → REST endpoints exposure
-- Service → Business logic
-- Repository → Data persistence layer
-- Entity → JPA domain models
-- DTO → Data transfer objects to decouple internal entities
-- Exception Handling → Centralized error management
+- Java 8+
+- Maven
+- MySQL
+- Docker (optional but recommended)
 
 ---
 
-## 📦 Main Features
+# 🏗 Architecture
+
+The project follows a layered backend architecture:
+
+Controller → Handles HTTP requests and exposes REST endpoints  
+Service → Contains business logic  
+Repository → Handles database persistence using Spring Data JPA  
+Entity → Domain models mapped with JPA annotations  
+DTO → Data transfer objects to decouple internal entities  
+Exception Handling → Centralized error management
+
+---
+
+# 📦 Main Features
 
 - Product management (CRUD operations)
 - Branch management
 - Sales registration
-- Relationship mapping between entities
-- Data persistence using JPA / Hibernate
+- Entity relationship mapping with JPA
+- Environment-based configuration
+- Docker integration
 - Structured API responses
 
 ---
 
-## 🔎 Example Endpoints
+# 🔎 Example Endpoints
 
 | Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET    | /products | Get all products |
-| POST   | /products | Create a new product |
-| PUT    | /products/{id} | Update product |
+|------|------|------|
+| GET | /products | Get all products |
+| POST | /products | Create a new product |
+| PUT | /products/{id} | Update product |
 | DELETE | /products/{id} | Delete product |
 
 ---
 
-## ⚙️ How to Run
+# 📂 Project Structure
+src
+├── controller
+├── service
+├── repository
+├── model
+├── dto
+└── SupermarketApiApplication
 
-1. Clone the repository  
-   `git clone https://github.com/your-user/supermarket-management-api.git`
-
-2. Configure database credentials in `application.properties`
-
-3. Run the application  
-   `mvn spring-boot:run`
-
-4. Access the API  
-   `http://localhost:8080`
 
 ---
 
-## 🎯 Project Purpose
+# 🐳 Run with Docker (Recommended)
+
+## 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/JLeonelMartins/supermarket-management-api.git
+cd supermarket-management-api
+
+## 2️⃣ Run the application
+
+docker-compose up --build
+
+## 3️⃣ Access the API
+http://localhost:8080
+
+---
+
+# 💻 Run Locally (Without Docker)
+
+## 1️⃣ Create MySQL database
+
+CREATE DATABASE supermarketapi;
+
+## 2️⃣ Configure environment variables
+
+DB_URL=jdbc:mysql://localhost:3306/supermarketapi?useSSL=false&serverTimezone=UTC
+DB_USER_NAME=root
+DB_PASSWORD=your_password
+
+## 3️⃣ Run the application
+http://localhost:8080
+
+---
+
+# 🧪 API Testing
+A Postman collection is included in the repository to test the API endpoints.
+postman/supermarket-api.postman_collection.json
+Import this collection into Postman to quickly test the endpoints.
+
+---
+
+🎯 Project Purpose
 
 This project was developed to practice and demonstrate backend architecture concepts using Spring Boot, REST API design, entity relationships and clean code structure.
 
 ---
 
-## 🐳 Docker
+# 👨‍💻 Author
 
-Run the application using Docker:
+Jonathan Leonel Martins
 
-docker-compose up --build
-
----
-
-## 📬 Postman Collection
-
-A Postman collection is included inside the /postman folder
-to easily test the available endpoints.
-
-## 👨‍💻 Author
-
-Jonathan Martins  
-Java Backend Developer  
+Java Backend Developer
 Buenos Aires, Argentina
+
+LinkedIn https://www.linkedin.com/in/jonathan-leonel-martins-530309193/

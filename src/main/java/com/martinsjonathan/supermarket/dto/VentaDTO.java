@@ -21,7 +21,7 @@ public class VentaDTO {
     private Long idSucursal;
 
     //datos del cliente
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) //mandas este campo en la request, pero no viene en la response
     private Long idCliente;
     private String nombre_cliente;
     private String apellido;
