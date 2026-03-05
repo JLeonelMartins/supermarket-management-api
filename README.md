@@ -69,12 +69,19 @@ Exception Handling → Centralized error management
 
 # 📂 Project Structure
 src
-├── controller
-├── service
-├── repository
-├── model
-├── dto
-└── SupermarketApiApplication
+├── main
+│   ├── java
+│   │   └── com
+│   │       └── martinsjonathan
+│   │           └── supermarket
+│   │               ├── controller
+│   │               ├── service
+│   │               ├── repository
+│   │               ├── model
+│   │               └── dto
+│   └── resources
+│       └── application.properties
+└── test
 
 
 ---
