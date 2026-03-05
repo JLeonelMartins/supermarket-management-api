@@ -71,7 +71,6 @@ Exception Handling → Centralized error management
 
 ## 1️⃣ Clone the repository
 
-```bash
 git clone https://github.com/JLeonelMartins/supermarket-management-api.git
 cd supermarket-management-api
 
