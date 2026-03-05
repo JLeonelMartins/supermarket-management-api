@@ -67,25 +67,6 @@ Exception Handling → Centralized error management
 
 ---
 
-# 📂 Project Structure
-src
-├── main
-│   ├── java
-│   │   └── com
-│   │       └── martinsjonathan
-│   │           └── supermarket
-│   │               ├── controller
-│   │               ├── service
-│   │               ├── repository
-│   │               ├── model
-│   │               └── dto
-│   └── resources
-│       └── application.properties
-└── test
-
-
----
-
 # 🐳 Run with Docker (Recommended)
 
 ## 1️⃣ Clone the repository
